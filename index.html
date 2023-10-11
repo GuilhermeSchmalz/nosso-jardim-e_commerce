@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=auto">
+    <script>
+        let width = screen.width;
+        document.getElementById("demo").innerHTML =  width + "px";
+    </script>
+    <meta >
+    <title>Nosso Jardim</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <!--Menu de navegação-->
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+        <nav class="navbar">
+            
+            <!--Barra de pesquisa-->
+    		<div class="pesquisa">
+    			<div class="search_box">
+    				<input type="text" class="input" placeholder="Pesquisar">
+	    			<div class="btn_search">
+	    				<i class="fas fa-search"></i>
+    				</div>
+    			</div>
+    		</div>
+
+            <a href="#orquideas">Nossas Flores</a>
+            <a href="#maisvendidos">Mais vendidos</a>
+            <a href="#acessibilidade">Acessibilidade</a>
+
+       </nav>
+
+       <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="formulario.html" class="fas fa-user"></a>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="products" id="products">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart" ></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Ixoria</h3>
+                            <div class="price"> R$89,99 <span>R$99,99</span></div>
+                        </div>
+                    </div>
+                </div>
+           
+             <div class="box">
+                   <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img2.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Plumeria</h3>
+                            <div class="price"> R$45,00 <span>R$50,00</span></div>
+                        </div>
+                    </div>
+             </div>
+             <div class="box">
+                  <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                           <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Hibiscus</h3>
+                            <div class="price"> R$144,00 <span>R$160,00</span></div>
+                     </div>
+                 </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bot">
+            <div class="chat-bot">
+                <a class="chatbot"  href="#">
+                    <img class="chatbot-img" src="./images/beechatbot.png" alt="chatbot">
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
