@@ -1,7 +1,7 @@
 # nosso-jardim-e_commerce
 Repo for storing eCommerce code for Web Coding class
 
-##**Alunos:**
+## **Alunos:**
 
 - Ângelo Rafael: 01589358
 - Diego Rodrigues: 01650828
