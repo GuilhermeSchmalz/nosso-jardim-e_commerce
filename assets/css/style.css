@@ -48,6 +48,7 @@
     animation: dark-to-light-background 0.3s ease-in-out;
 }
 
+
 /* Form Header */
 #form_header {
     display: flex;
@@ -185,4 +186,12 @@
     100.0% {
         background-color:var(--color-dark-100); 
     }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    min-height: 125vh;
+    background-size: cover;
+    background-position: center;
 }
