@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=auto">
+    <meta>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/tema.css">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <script src="./js/scrypt.js" defer></script>
+
+    <title>Nosso Jardim</title>
+</head>
+
+<body class="light-theme">
+
+    <header>
+            <!--Menu de navegação-->
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+        
+
+            <nav class="navbar">
+
+                <!--Barra de pesquisa-->
+                <div class="pesquisa">
+                    <div class="search_box">
+                        <input type="text" class="input" placeholder="Enter the product or city you want to search for">
+                        <div class="btn_search">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim Barra de pesquisa-->
+
+                <a href="index-En.html" id="home">HOME</a>
+                <a href="#products" id="produtos">PRODUCTS</a>
+                <a href="#contato" id="contato">CONTACT</a>
+                <a href="cadastro.html" id="cadastrar">REGISTER</a>
+
+            </nav>
+
+            <!--Ícones menu de navegação-->
+            <div class="icons">
+                <button class="btn-tema"> 
+                    <span class="material-symbols-outlined" id="dark">
+                     dark_mode
+                    </span>
+                    <span class="material-symbols-outlined" id="light">
+                        light_mode
+                    </span>
+                </button>
+
+                <button id="aumentar-fonte">
+                    <span class="material-symbols-outlined">
+                        text_increase
+                    </span>
+                </button>
+
+                <button id="diminuir-fonte">
+                    <span class="material-symbols-outlined">
+                        text_decrease
+                    </span>
+                </button>
+
+                <a href="#" class="heart">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </a>
+                <a href="#" class="cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
+                <a href="cadastro.html" class="user">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </a>
+                <a href="index.html">
+                    <img src="./images/pt-br.png" alt="pt-br" class="lang">
+                </a>
+            </div>
+            <!--Fim ícones menu de navegação-->
+
+    </header>
+
+    <main>
+        <!--Inicio Carrosel-->
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="images/slide-1.png" alt="slide 1">
+                    <img class="img-mobile" src="images/slide-1-mob.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/slide-2.jpg" alt="slide 2">
+                    <img class="img-mobile" src="images/slide-2-mob.jpg" alt="slide 2">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="images/slide-3.jpg" alt="slide 3">
+                    <img class="img-mobile" src="images/slide-3-mob.jpg" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </section>
+        <!--Fim carrossel-->
+
+        <!-- Inicio seção Produtos -->
+        <section class="products" id="products">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Ixoria</h3>
+                            <div class="price"> R$89,99 <span>R$99,99</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img2.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Plumeria</h3>
+                            <div class="price"> R$45,00 <span>R$50,00</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/img3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Hibiscus</h3>
+                            <div class="price"> R$144,00 <span>R$160,00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim seção Produtos-->
+
+        <!-- Inicio tópicos-->
+        <section class="topicos">
+
+            <div class="institucional" id="institucional">
+                <h4 id="inst">Institucional</h4>
+                <input type="checkbox" id="ipt-institucional">
+                <label for="ipt-institucional" class="material-symbols-outlined" id="lb-more">expand_more</label>
+                <label for="ipt-institucional" class="material-symbols-outlined" id="lb-less">expand_less</label>
+                <ul id="ul-institucional">
+                    <li>About Nosso Jardim</li>
+                    <li>Who we are</li>
+                    <li>Opening hours</li>
+                    <li>Corporate solutions</li>
+                    <li>Privacy and security</li>
+                </ul>
+            </div>
+
+            <div class="ajuda">
+                <h4 id="ajuda">Help and Support</h4>
+                <input type="checkbox" id="ipt-ajuda">
+                <label for="ipt-ajuda" class="material-symbols-outlined" id="lb-more">expand_more</label>
+                <label for="ipt-ajuda" class="material-symbols-outlined" id="lb-less">expand_less</label>
+                <ul id="ul-ajuda">
+                    <li>Call center</li>
+                    <li>How to buy</li>
+                    <li>My requests</li>
+                    <li>Exchanges and returns</li>
+                    <li>Safety Tips</li>
+                </ul>
+            </div>
+
+            <div class="mais">
+                <h4 id="mais">More from Nosso Jardim</h4>
+                <input type="checkbox" id="ipt-mais">
+                <label for="ipt-mais" class="material-symbols-outlined" id="lb-more">expand_more</label>
+                <label for="ipt-mais" class="material-symbols-outlined" id="lb-less">expand_less</label>
+                <ul id="ul-mais">
+                    <li>Be our partner</li>
+                    <li>Discount coupons</li>
+                    <li>Partner brands</li>
+                    <li>Our Garden in the media</li>
+                    <li>Customer reviews</li>
+                </ul>
+            </div>
+
+            <div class="destaque">
+                <h4 id="dest">Highlights</h4>
+                <input type="checkbox" id="ipt-destaque">
+                <label for="ipt-destaque" class="material-symbols-outlined" id="lb-more">expand_more</label>
+                <label for="ipt-destaque" class="material-symbols-outlined" id="lb-less">expand_less</label>
+                <ul id="ul-destaque">
+                    <li>Deliveries within three hours</li>
+                    <li>Brazilian tropical flowers</li>
+                    <li>Florist near me</li>
+                    <li>Deliveries throughout Brazil</li>
+                    <li>Bouquets</li>
+                </ul>
+            </div>
+            
+            <div class="especial">
+                <h4 id="espe">Special dates</h4>
+                <input type="checkbox" id="ipt-especial">
+                <label for="ipt-especial" class="material-symbols-outlined" id="lb-more">expand_more</label>
+                <label for="ipt-especial" class="material-symbols-outlined" id="lb-less">expand_less</label>
+                <ul id="ul-especial">
+                    <li>Black Friday</li>
+                    <li>Christmas</li>
+                    <li>Our Garden Birthday</li>
+                    <li>Spring Collection</li>
+                    <li>Summer Collection</li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- Fim tópicos -->
+
+    </main>
+
+    <footer id="footer">
+        <section class="bot">
+            <div class="chat-bot">
+                <a class="chatbot" href="#">
+                    <img class="chatbot-img" src="./images/beechatbot.png" alt="chatbot">
+                </a>
+            </div>
+        </section>
+
+        <section class="pagamento">
+            <img src="images/pagamentos-light.png" alt="pagamento-light" class="pag-light">
+            <img src="images/pagamentos-dark.png" alt="pagamento-dark" class="pag-dark">
+        </section>
+
+        <div class="rodape">
+            <p>© 2023 Copyright . Nosso Jardim, All rights reserved.</p>
+            <span class="material-symbols-outlined">call</span>
+            <p id="contato">(81) 9999-9999</p>
+        </div>
+    </footer>
+</body>
+
+</html>
