@@ -1,0 +1,93 @@
+:root {
+    /* Paleta de cores */
+    --rosa: #fc7cff;
+    --branco: #fff;
+    --preto: #1d1b20;
+    --cinza: #808080;
+    --cclaro: #d9d9d9;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: 'Roboto' sans-serif;
+}
+
+body, header {
+    background: var(--bg);
+}
+
+.light-theme {
+    --bg: var(--branco);
+    --fontColor: var(--cinza);
+    --btnFontColor: var(--preto);
+}
+
+/*Ícones*/
+.light-theme .icons .material-symbols-outlined{
+    font-size: 3rem;
+}
+.light-theme .icons .material-symbols-outlined:hover{
+    --fontColor: var(--rosa);
+}
+
+.light-theme #light{
+    display: none;
+}
+
+.light-theme .icons #aumentar-fonte, #diminuir-fonte{
+    background-color: var(--bg);
+}
+
+.light-theme .icons #diminuir-fonte .material-symbols-outlined{
+    font-size: 2.5rem;  
+}
+/*Fim ícones*/
+
+
+.dark-theme #dark{
+    display: flex;
+}
+
+.dark-theme {
+    --bg: var(--preto);
+    --fontColor: var(--cclaro);
+    --btnFontColor: var(--preto);
+}
+
+.dark-theme .container{
+    background-color: var(--cinza);
+}
+
+.dark-theme #dark{
+    display: none;
+}
+.dark-theme #light{
+    display: flex;
+}
+
+.btn-tema{
+    font-size: 1.5rem;
+    padding:1 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    margin-right: 1.5rem;
+}
+
+.btn-tema:hover{
+    cursor: pointer;
+}
+
+.btn-tema:focus{ 
+    outline-style: none;
+}
+
+.dark-theme footer .pag-light{
+    display: none;
+}
+
+.dark-theme footer .pag-dark{
+    display: flex;
+}
