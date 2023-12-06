@@ -138,6 +138,16 @@ header .icons a{
     margin-left: 1.5rem;
 }
 
+header #aumentar-fonte:hover{
+    cursor: pointer;
+
+}
+
+header #diminuir-fonte:hover{
+    cursor: pointer;
+
+}
+
 .lang{
     height: 3rem;
     width: 3rem;
